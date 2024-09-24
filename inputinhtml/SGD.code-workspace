@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "SGD",
+			"path": "../../SGD"
+		},
+		{
+			"name": "inputinhtml",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SGD"
+	}
+}

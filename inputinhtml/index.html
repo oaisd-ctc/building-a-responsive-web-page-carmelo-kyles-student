@@ -1,0 +1,75 @@
+<html>
+
+<head></head>
+
+<body>
+    <input type="number2" placeholder="number 1" id="userinput">
+    <br>
+    <input type="number1" placeholder="number 2 " id="num">
+    <br>
+    <button type="submit" onclick="getOption();myfunc()" id="demo">click me</button>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p> Select one from the given options:
+        <select id="select1">
+            <option value="add">add</option>
+            <option value="multiply">multiply</option>
+            <option value="subtract">subtract</option>
+            <option value="divide">divide</option>
+            <option value="exponential">exponential</option>
+
+        </select>
+    </p>
+    <p> The value of the option selected is:
+        <span class="output"></span>
+    </p>
+
+    <script type="text/javascript">
+        function getOption() {
+            selectElement = document.querySelector('#select1');
+            output = selectElement.value;
+            document.querySelector('.output').textContent = output;
+        }
+    </script>
+    <script>
+        function myfunc() {
+
+            var input = parseFloat(document.getElementById('userinput').value);
+            if (input === null) {
+                input = 0;
+                alert("INPUT 1 IS BLANK");
+            }
+            var input2 = parseFloat(document.getElementById('num').value);
+            if (input2 === null) {
+                input2 = 0;
+                alert("INPUT 2 IS BLANK");
+            }
+            if (output == "add") {
+                var result = input + input2;
+            }
+            else if (output == "multiply") {
+                var result = input * input2;
+            }
+            else if (output == "subtract") {
+                var result = input - input2;
+            }
+            else if (output == "divide") {
+                var result = input / input2;
+            }
+            else if (output == "exponential") {
+                var result = Math.pow(input1, input2);
+            }
+            else {
+                alert("INVALID");
+            }
+
+            document.getElementById("p1").innerHTML = result;
+        }
+        function updateButton() {
+            document.getElementById(p2).innerHTML = "blank"
+        }
+    </script>
+</body>
+
+</html>
+<!-- fdas -->
